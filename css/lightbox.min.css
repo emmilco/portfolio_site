@@ -21,7 +21,7 @@
 	width:20px;
 	height:20px;
 }
-#ui-lightbox-content>* {
+#ui-lightbox-content> * {
 	display:block;
 	position:absolute;
 	z-index:100;
