@@ -1363,6 +1363,11 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	.expertiesdesc {
 		border: none;
 	}
+
+	.skillset svg {
+		width: 50% !important;
+
+	}
 }
 
 
