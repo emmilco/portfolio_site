@@ -1485,3 +1485,15 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	align-items: center;
 	margin-bottom: 80px;
 }
+
+.skillset {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.skillset svg {
+	width: 40%;
+	max-width: 200px;
+	padding: 40px;
+}
