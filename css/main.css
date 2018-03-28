@@ -547,6 +547,33 @@ header{
 	font-style:italic;
 	padding-right: 30px;
 }
+
+.expertiesico img {
+	width: 20%;
+}
+
+.live-link {
+	color: darkred;
+	font-size: 12px;
+	margin-left: 20px;
+}
+
+.live-link:hover {
+	text-decoration: underline;
+}
+
+img.screenshot {
+	width: 250px;
+	padding: 40px;
+	margin-left: 20px;
+	align-self: center;
+}
+
+.github {
+	width: 30px;
+	margin-left: 20px;
+}
+
 .expertiesdesc {
 	border-left:2px solid #ada5ad;
 	padding:0 0 0 69px;
@@ -562,6 +589,11 @@ header{
 	text-transform:uppercase;
 	letter-spacing:2px;
 }
+
+.expertiesdesc a:hover {
+	text-decoration: none;
+}
+
 .expertiesdesc h5 {
 	font-family: 'Crimson Text', serif;
 	color:#5b4c5c;
@@ -1318,6 +1350,19 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	.conForm .submitBnt {
 		width:100%;
 	}
+
+	.screenshot-wrapper {
+		display: none;
+	}
+
+	.row.media {
+		padding: 0 20px;
+		margin-bottom: 60px;
+	}
+
+	.expertiesdesc {
+		border: none;
+	}
 }
 
 
@@ -1383,6 +1428,9 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 		padding-bottom:20px;
 	}
 
+.row.media {
+	display: block;
+}
 }
 
 
@@ -1435,5 +1483,5 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 .row.media {
 	display: flex;
 	align-items: center;
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 }
