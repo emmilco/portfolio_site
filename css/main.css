@@ -38,7 +38,7 @@ html { font-size: 100%;
 	text-rendering: optimizelegibility;
 }
 body {
-	color:#888089;
+	color: rgb(57,64,72);
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	position:relative;
@@ -191,7 +191,7 @@ header{
 .banner{
 	overflow:hidden ;
 	margin:0 auto !important;
-	background:#CACACA;
+	background: rgb(57,64,72);
 }
 .patternOverlay {
 	background:#313a44;
@@ -385,7 +385,7 @@ header{
 	width:42px;
 	height:32px;
 	text-align:center;
-	background:#5b4c5c;
+	background:#333;
 	position:absolute;
 	left:50%;
 	margin-left:-21px;

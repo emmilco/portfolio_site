@@ -1,6 +1,6 @@
 jQuery(
 function($) {
-	
+
 	$(document).ready(function(){
 		var contentButton = [];
 		var contentTop = [];
@@ -52,73 +52,19 @@ function($) {
 	  					} else {
 	  						console.log("incorrect argument, ignored.");
 	  						topMargin = 0;
-	  					}	
+	  					}
 	  				}
 	  			} else {
 	  				topMargin = 0;
 	  			}
 	  			menuSize = $('.'+itemClass).size();
-  			}			
+  			}
 			stickyHeight = parseInt($(this).height());
 			stickyMarginB = parseInt($(this).css('margin-bottom'));
 			currentMarginT = parseInt($(this).next().closest('div').css('margin-top'));
 			vartop = parseInt($(this).offset().top);
 			//$(this).find('*').removeClass(itemHover);
 		}
-		$(document).on('scroll', function() {
-			varscroll = parseInt($(document).scrollTop());
-			if(menuSize != null){
-				for(var i=0;i < menuSize;i++)
-				{
-					contentTop[i] = $('#'+content[i]+'').offset().top;
-					function bottomView(i) {
-						contentView = $('#'+content[i]+'').height()*.4;
-						testView = contentTop[i] - contentView;
-						//console.log(varscroll);
-						if(varscroll > testView){
-							$('.'+itemClass).removeClass(itemHover);
-							$('.'+itemClass+':eq('+i+')').addClass(itemHover);
-						} else if(varscroll < 100){
-							$('.'+itemClass).removeClass(itemHover);
-							$('.'+itemClass+':eq(0)').addClass(itemHover);
-						}
-					}
-					if(scrollDir == 'down' && varscroll > contentTop[i]-100 && varscroll < contentTop[i]+100) {
-						$('.'+itemClass).removeClass(itemHover);
-						$('.'+itemClass+':eq('+i+')').addClass(itemHover);
-					}
-					if(scrollDir == 'up') {
-						bottomView(i);
-					}
-				}
-			}
-
-
-
-			if(vartop < varscroll + topMargin){
-				$('.wrapper').addClass('spHeight');
-				$('.stuckMenu').addClass('isStuck');
-				$('.stuckMenu').next().closest('div').css({
-					'margin-top': stickyHeight + stickyMarginB + currentMarginT + 'px'
-				}, 10);
-				$('.stuckMenu').css("position","fixed");
-				$('.isStuck').css({
-					top: '0px'
-				}, 10, function(){
-
-				});
-			};
-
-			if(varscroll + topMargin < vartop){
-				$('.wrapper').removeClass('spHeight');
-				$('.stuckMenu').removeClass('isStuck');
-				$('.stuckMenu').next().closest('div').css({
-					'margin-top': currentMarginT + 'px'
-				}, 10);
-				$('.stuckMenu').css("position","relative");
-			};
-
-		});
 	});
 
 });
