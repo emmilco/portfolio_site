@@ -1,0 +1,16 @@
+html {
+  background-color: bisque;
+}
+
+body {
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  hyphens: auto;
+  word-break: normal;
+  font-size: 110%;
+  text-align: justify;
+}
