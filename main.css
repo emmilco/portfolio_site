@@ -2,8 +2,12 @@ html {
   background-color: bisque;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
-  max-width: 500px;
+  max-width: 450px;
   margin: 100px auto;
 }
 
@@ -15,9 +19,14 @@ body {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+
+  font-family: garamond-premier-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
   hyphens: auto;
   word-break: normal;
-  font-size: 110%;
+  font-size: 120%;
   text-align: justify;
 }
