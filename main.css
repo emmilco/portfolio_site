@@ -18,7 +18,7 @@ body {
   }
 }
 
-p {
+body {
   /* font-family: 'Open Sans', sans-serif; */
 
   font-family: garamond-premier-pro, sans-serif;
@@ -29,4 +29,20 @@ p {
   word-break: normal;
   font-size: 120%;
   text-align: justify;
+}
+
+nav {
+  padding-top: 50px;
+}
+
+footer {
+  font-size: 70%;
+}
+
+img {
+  width: 100%;
+}
+
+.small-image {
+  width: 70%;
 }
